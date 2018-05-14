@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="MyFirstGtkAppWindow" parent="GtkApplicationWindow">
+    <property name="border-width">10</property>
+    <property name="default-width">300</property>
+    <property name="default-height">150</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+        <property name="visible">true</property>
+        <property name="show-close-button">true</property>
+        <property name="title">My First GTK+ App</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="box">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+	<property name="halign">center</property>
+        <child>
+          <object class="GtkLabel" id="label">
+            <property name="label">Hello, World!</property>
+            <property name="visible">true</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="button">
+            <property name="label">Click me!</property>
+            <property name="visible">true</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="fill">False</property>
+            <property name="padding">50</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

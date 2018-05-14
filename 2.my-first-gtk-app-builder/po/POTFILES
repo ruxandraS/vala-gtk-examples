@@ -1,0 +1,9 @@
+data/org.gnome.My-First-Gtk-App.desktop.in
+data/org.gnome.My-First-Gtk-App.appdata.xml.in
+data/org.gnome.My-First-Gtk-App.gschema.xml
+src/window.ui
+
+src/main.vala
+src/window.vala
+
+
